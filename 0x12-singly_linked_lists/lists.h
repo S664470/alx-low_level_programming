@@ -1,12 +1,18 @@
+#include <stddef.h>
 #ifndef LISTS_H
 #define LISTS_H
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * Auther: shahenda altayeb
  * Date: 28 jan
  * Description: header file include al the prototypys and the function prototype
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
+ * Description: singly linked list node structure
  */
 typedef struct list_s
 {

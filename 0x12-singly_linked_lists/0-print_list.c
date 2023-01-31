@@ -2,22 +2,22 @@
 #include <stdio.h>
 
 /**
- * print_list function that prints all element of list_t.
- *
- * @h: list to print
- * File: 0-print_list.c
  * Auther: shahenda altayeb
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
- * Return: the number of node
+ * Description: singly linked list node structure
  */
 
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	
-	while(h !=NULL)
+
+	while (h != NULL)
 	{
-		if(h->str == NULL)
+		if (h->str == NULL)
 		{
 			printf("[0] (null)\n");
 		}
@@ -33,5 +33,5 @@ size_t print_list(const list_t *h)
 
 	}
 
-	return count;
+	return (count);
 }
