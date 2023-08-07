@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include "main.h"
+
+
+/**
+ * File: read_textfile
+ * Latters: number of latters should read
+ * Return: 0 or NULL
+ */
+
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	char *buff o r w;
+	ssize_t nbitread;
+
+	if (filename == NULL)
+		return (0);
+
+	o = open(filename, "r")
+		if (o == NULL)
+			return (0);
+
+	buff = malloc(sizeof(letters));
+	if (buff == NULL)
+		return (0);
+
+	nbitread = read(buff, sizeof(char), latters, o);
+	if (nbitread <= 0)
+		return (0);
+
+	buff[nbitread] = '\0';
+
+
+
