@@ -1,6 +1,6 @@
 /*
  * File: 3-hash_table_set.c
- * Auth: Shahi Altayeb
+ * Auth: Michael Ndula
 */
 
 #include "hash_tables.h"
